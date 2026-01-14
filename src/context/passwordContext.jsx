@@ -20,7 +20,6 @@
     const num = "1234567890";
     const alphabetsCapital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const low = "abcdefghijklmnopqrstuvwxyz";
-
     let chars = "";
     if (uppercase) chars += alphabetsCapital;
     if (lowercase) chars += low;
@@ -41,7 +40,7 @@
   };
   useEffect(() =>{
 createPassword();
-  },[])
+  }, [length, uppercase, lowercase, numbers, symbols])
 
    useEffect(() =>{
     if(password.length < 9 ){

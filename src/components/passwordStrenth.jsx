@@ -33,7 +33,8 @@ export default function passwordStrenth() {
         value={strengthPercent}
         onChange={(e) => setStrengthPercent(Number(e.target.value))}
         className={`w-[500px] h-3 bg-gray-300 rounded-lg  ${strength === "Weak" ? "accent-red-500" : "accent-blue-500"}   cursor-text` } 
-       disabled/>
+      
+      disabled/>
          {/* <progress value=  max="100" /> */}
 <p className={`${ strength === "Weak" ? "text-red-600" : "text-black" } font-semibold flex items-center justify-center gap-1`} > { <RiPoliceBadgeLine />} { strength} 
       </p>

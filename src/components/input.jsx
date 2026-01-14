@@ -16,7 +16,7 @@ export default function input() {
     <div className="input-field flex border-1 rounded-4 mt-5 w-[800px] p-5 h-[100px] border-black items-center gap-2">
       <input
         type="text"
-        className="border-none outline-none flex-grow"
+        className="border-none text-xl font-semibold outline-none flex-grow"
         placeholder="Password"
         value={password}
         readOnly
